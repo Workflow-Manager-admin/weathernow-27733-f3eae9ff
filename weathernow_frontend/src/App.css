@@ -1,0 +1,129 @@
+:root {
+  --base-light: #4A90E2;
+  --primary: #4A90E2;
+  --secondary: #50E3C2;
+  --accent: #F5A623;
+  --text-color: #092c4c;
+  --text-secondary: #50E3C2;
+  --background: #f7fbfc;
+  --border-color: #e3e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+}
+
+.navbar {
+  background-color: var(--primary);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.32rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-symbol {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.subtitle {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.btn, .btn-large {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 24px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover, .btn-large:hover {
+  background-color: var(--accent);
+}
+
+.btn-large {
+  padding: 13px 26px;
+  font-size: 1.15rem;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+}

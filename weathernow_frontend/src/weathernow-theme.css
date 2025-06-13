@@ -1,0 +1,76 @@
+:root {
+  --weathernow-primary: #4A90E2;
+  --weathernow-secondary: #50E3C2;
+  --weathernow-accent: #F5A623;
+  --weathernow-bg: #f7fbfc;
+  --weathernow-header: #4A90E2;
+  --weathernow-title: #092c4c;
+  --weathernow-border: #e3e8f0;
+}
+
+/* Custom WeatherNow styles */
+.app {
+  background: var(--weathernow-bg);
+  color: var(--weathernow-title);
+  min-height: 100vh;
+}
+
+.navbar {
+  background: var(--weathernow-header);
+  color: #fff;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--weathernow-border);
+}
+
+.logo-symbol {
+  color: var(--weathernow-accent);
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.search-bar input:disabled {
+  background: #f0f4f7;
+  color: #bbb;
+}
+
+.weather-info {
+  /* see inline styles in App.js */
+}
+
+.btn, .btn-large {
+  background: var(--weathernow-primary);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover, .btn-large:hover {
+  background: var(--weathernow-secondary);
+}
+
+.subtitle {
+  color: var(--weathernow-primary);
+}
+
+.title {
+  color: var(--weathernow-title);
+}
+
+.description {
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .weather-info {
+    padding: 16px !important;
+    font-size: 100% !important;
+  }
+}

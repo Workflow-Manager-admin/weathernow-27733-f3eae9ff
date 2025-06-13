@@ -1,0 +1,4 @@
+{
+    "command": "source venv/bin/activate && uvicorn src.api.main:app --host 0.0.0.0 --port <port> --reload",
+    "working_directory": "/home/kavia/workspace/code-generation/weathernow-27733-f3eae9ff/weather_now_backend"
+}
